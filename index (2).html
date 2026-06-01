@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nayas portfolio</title>
   <link rel="stylesheet" href="css/index-style.css">
+  <link rel="stylesheet" href="js/index.js">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
@@ -73,36 +74,11 @@
           Ever since I was young, I have always been interested in ICT.
           Growing up, I was a very imaginative and shy person who loved creativity and art.
         </p>
-        <a href="about-me.html" class="email-button">see more</a>
+        <a href="about-me (1).html" class="email-button">see more</a>
       </div>
 
     </div>
   </section>
-  <script>
-    const text = "about me";
-    const element = document.querySelector(".about-me");
-    element.textContent = "";
-    let i = 0;
-
-    function type() {
-      if (i < text.length) {
-        element.textContent += text[i];
-        i++;
-        setTimeout(type, 200);
-      }
-    }
-
-    type();
-    const aboutContent = document.querySelector(".about-content");
-    aboutContent.style.opacity = "0";
-    aboutContent.style.transform = "translateX(-60px)";
-    aboutContent.style.transition = "opacity 2s ease, transform 0.8s ease";
-
-    setTimeout(() => {
-      aboutContent.style.opacity = "1";
-      aboutContent.style.transform = "translateX(0)";
-    }, 300);
-  </script>
 
 </body>
 </html>
